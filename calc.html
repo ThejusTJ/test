@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> calculator </title>
+
+</head>
+<body>
+	<form>
+		<h1>select the mode </h1>
+		Simple interest<input type='radio' name='calculate' value='yes' id='yes'></br>
+		
+	    compound interest<input type='radio' name='calculate'value='no' id='no'></br>
+
+        <h2>enter the details</h2></br>
+        enter amount<input type="number" name='pricipal' id='p'> </br>
+        enter rate in %<input type='number' name='rate' id='r'> </br>
+        enter years<input type="number" name="year" id='t'></br>
+        compound frequency(for CI) <input type="number" name=" num" id='n'></br>
+        <input type='button' value='submit' onclick='check1();'>
+    
+</form>
+	<script type="text/javascript">
+		function check1(){
+			var yescheck= document.getElementById("yes").checked;
+			var nocheck= document.getElementById("no").checked;
+			if(yescheck== false && nocheck==false){
+				alert('select a mode');
+				return false;
+			}
+			else if(yescheck==true && nocheck==false){
+			var principal= document.getElementById('p').value;
+			var rate= document.getElementById('r').value;
+			var time= document.getElementById('t').value;
+			var R= rate/100;
+			var a= 1+ (R * time);
+			var interest= principal*a;
+			alert("interest is"+interest) ;
+		   }
+		    else if(yescheck==false && nocheck==true){
+			var principal1 = document.getElementById('p').value;
+			var  num1 = document.getElementById('n').value;
+			var rate1 = document.getElementById('r').value;
+			var time1= document.getElementById('t').value;
+			var R1= rate1/100;
+			var n1= R1/num1;
+			var a1= 1+ n1;
+			var b1=num1*time1;
+			var pow1=Math.pow(a1,b1);
+			var interest1= principal1*pow1;
+			alert("interest is"+interest1) ;
+		}
+	}
+		
+	</script>
+
+</body>
+</html>
