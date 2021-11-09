@@ -1,0 +1,35 @@
+from Jishnu Kesavakumar to everyone:    12:32 PM
+done
+from Krittapas Bavontaweepanya to everyone:    12:32 PM
+done
+from TAOUFIK KABBAJ to everyone:    12:32 PM
+done
+from Athul to everyone:    12:33 PM
+done
+from Syam Jayan to everyone:    12:33 PM
+done
+from Raman Sharma to everyone:    12:40 PM
+ 243  mkdir stash
+  244  cd stash/
+  245  touch 1.txt 2.txt
+  246  git init
+  247  git add .
+  248  git commit -m "1 and 2 file is added"
+  249  git branch dev1
+  250  git checkout dev1
+  251  touch 3.txt
+  252  git add 3.txt
+  253  git status
+  254  git checkout master
+  255  ls
+  256  git checkout dev1
+  257  git stash
+  258  git stash pop
+  259  git status
+  260  git stash save "3.txt file is stashed"
+  261  git status
+  262  git stash list
+  263  ls
+  264  git stash pop
+  265  git stash list
+  266  git commit -m "3.txt is added"
