@@ -1,0 +1,47 @@
+yum install tree
+from Raman Sharma to everyone:    1:27 PM
+13:50
+from Raman Sharma to everyone:    1:53 PM
+mvn compile
+from Raman Sharma to everyone:    1:55 PM
+mvn clean
+from Raman Sharma to everyone:    1:55 PM
+mvn test
+from Raman Sharma to everyone:    2:03 PM
+java -cp target/myproj-1.0-SNAPSHOT.jar com.raman.App
+from Raman Sharma to everyone:    2:23 PM
+ 269  yum install maven -y
+  270  mvn --version
+  271  mvn archetype:generate
+  272  ls
+  273  cd myproj/
+  278  ls
+  279  tree
+  280  yum install tree
+  281  tree
+  282  cat src/main/java/com/raman/App.java
+  283  cat src/test/java/com/raman/AppTest.java
+  284  ls
+  285  cat pom.xml
+  286  ls
+  287  ls
+  288  mvn compile
+  289  ls
+  290  ls target/
+  291  mvn clean
+  292  ls
+  293  mvn test
+  294  mvn clean
+  295  ls
+  296  mvn clean package
+  297  ls
+  298  ls target/
+  299  cat src/main/java/com/raman/App.java
+  300  java -cp target/myproj-1.0-SNAPSHOT.jar com.raman.App
+  301  vi src/main/java/com/raman/App.java
+  302  mvn clean package
+  303  java -cp target/myproj-1.0-SNAPSHOT.jar com.raman.App
+  304  vi src/test/java/com/raman/AppTest.java
+  305  mvn clean package
+  306  ls
+  307  ls target/
